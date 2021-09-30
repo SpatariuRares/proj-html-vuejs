@@ -1,6 +1,6 @@
 <template>
   <div class="container d-flex align-items-center justify-content-between header my-3">
-    <img :src="require('@/assets/images/avada-marketing-logo.png')" alt="logo">
+    <img :src="require(`@/assets/images/${logo.link}`)" :alt="logo.alt">
     <ul class="d-flex m-0">
       <li v-for="(link,index) in links" :key="index" :class="link.active?'active':null" >
         {{link.text}} 
@@ -19,11 +19,13 @@
 
 <script>
 import * as dataHeader from '@/assets/data/link.js';
+import * as logo from '@/assets/data/image.js'
 export default {
   name: 'Header',
   data(){
     return {
         links:dataHeader.headerlink,
+        logo:logo.logoImage,
       }
   },
 }

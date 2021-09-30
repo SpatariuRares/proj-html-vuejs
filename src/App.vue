@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <!-- <font-awesome-icon icon="spinner" /> -->
-    <Header msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <Jumbo/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/Header.vue';
+import Jumbo from './components/Jumbo.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Jumbo
   }
 }
 </script>
