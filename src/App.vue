@@ -9,6 +9,7 @@
     </div>
     <WorkWith/>
     <Contact/>
+    <Trust/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Jumbo from './components/Jumbo.vue';
 import Marketing from './components/Marketing.vue';
 import WorkWith from './components/WorkWith.vue';
 import Contact from './components/Contact.vue';
+import Trust from './components/Trust.vue';
 import * as image from "@/assets/data/image.js"
 
 export default {
@@ -28,6 +30,7 @@ export default {
     Marketing,
     WorkWith,
     Contact,
+    Trust
   },
   data(){
     return {

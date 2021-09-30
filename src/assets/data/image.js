@@ -73,4 +73,28 @@ const contact={
     targer:"Drive Leads and Sales with Avada ",
     alt:"marketing-expert-cta"
 }
-export {jumboImage,jumboicon,logoImage,jumboAvatar,Market,WorkWith,contact}
+
+const Trust=[
+    {
+        image:"case-studies-1.png",
+        text:"How Spaces attracted five million visitors by improving the content ",
+        number: "200%",
+        alt:"case-studies-1",
+        detail: "Higher revenue from digital",
+    },
+    {
+        image:"case-studies-4.png",
+        text:"Creativity helped How Hemisferio to increase their brand reach vertically ",
+        number: "10x",
+        alt:"case-studies-1",
+        detail: "sales increase with the same and spend",
+    },
+    {
+        image:"case-studies-6.png",
+        text:"How DigitalBox used Al-powered data insight to boost sales ",
+        number: "3-year",
+        alt:"case-studies-1",
+        detail: "Partnership with Avada Consultant",
+    },
+]
+export {jumboImage,jumboicon,logoImage,jumboAvatar,Market,WorkWith,contact,Trust}
