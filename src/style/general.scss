@@ -1,0 +1,15 @@
+@import "@/style/vars.scss";
+.bottone{
+  border-radius: 10px;
+  background-color:$Ectasy;
+  border:0;
+  padding: 10px;
+  color:$White;
+  &.opac{
+    color:$Ectasy;
+    background-color:rgba($Ectasy,0.4)
+  }
+}
+.orange{
+  color: $Ectasy;
+}
