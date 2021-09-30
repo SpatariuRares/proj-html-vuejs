@@ -7,6 +7,8 @@
       <Marketing v-for="(item,index) in market" :key="index"
       :item="item"/>
     </div>
+    <WorkWith/>
+    <Contact/>
   </div>
 </template>
 
@@ -14,6 +16,8 @@
 import Header from './components/Header.vue';
 import Jumbo from './components/Jumbo.vue';
 import Marketing from './components/Marketing.vue';
+import WorkWith from './components/WorkWith.vue';
+import Contact from './components/Contact.vue';
 import * as image from "@/assets/data/image.js"
 
 export default {
@@ -21,7 +25,9 @@ export default {
   components: {
     Header,
     Jumbo,
-    Marketing
+    Marketing,
+    WorkWith,
+    Contact,
   },
   data(){
     return {

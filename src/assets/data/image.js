@@ -65,4 +65,12 @@ const WorkWith=[
         path:"digitalbox.png"
     },
 ]
-export {jumboImage,jumboicon,logoImage,jumboAvatar,Market,WorkWith}
+const contact={
+    name: "Sandy Reiff",
+    number: "(555)802-1234",
+    image:"marketing-expert-cta.png",
+    job:"marketing Consultant expert",
+    targer:"Drive Leads and Sales with Avada ",
+    alt:"marketing-expert-cta"
+}
+export {jumboImage,jumboicon,logoImage,jumboAvatar,Market,WorkWith,contact}
