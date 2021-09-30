@@ -29,7 +29,7 @@
             <form action="" class="d-flex flex-column">
               <div class="d-flex justify-content-between align-items-center my-2">
                 <input type="text" name="name" id="name" placeholder="Your Name*" required>
-                <font-awesome-icon class="icon"  icon="address-book" />
+                <img :src="require(`@/assets/images/${icon.link}`)" :alt="avatar.alt">
               </div>
               <div class="d-flex justify-content-between align-items-center my-2">
                 <input type="email" name="email" id="email" placeholder="Your Email*" required>
@@ -66,6 +66,7 @@ export default {
     return {
       jumbo: image.jumboImage,
       avatar: image.jumboAvatar,
+      icon:image.jumboicon,
     }
   }
 }
@@ -90,7 +91,7 @@ export default {
       margin: 10px;
       padding: 10px;
       aspect-ratio: 1/1;
-      border-radius:3px;
+      border-radius:10px;
       #prezzo{
         color:$Lima;
         font-size:1.5rem;
@@ -133,7 +134,7 @@ export default {
     p{
       color: $Gunsmoke;
     }
-    img{
+    .avatar{
       width: 100px;
       border-radius: 50%;
       aspect-ratio: 1/1;
@@ -151,9 +152,6 @@ export default {
           &:focus-visible{
             outline: 0;
           }
-        }
-        .icon{
-          color: $Gunsmoke;
         }
       }
     }
