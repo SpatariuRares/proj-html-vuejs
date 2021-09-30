@@ -47,7 +47,7 @@
   </div>
   <div class="position-absolute d-flex  flex-column  quadratini">
     <div class="d-flex flex-column justify-content-between align-items-center  quadratino">
-      <font-awesome-icon class="icon"  icon="address-book" />
+      <font-awesome-icon class="icon" :icon="['fab', 'atlassian']" />
       <p>demos</p>
     </div>
     <div class="d-flex flex-column justify-content-between align-items-center quadratino">
@@ -82,6 +82,9 @@ export default {
   .quadratini{
     top: 20px;
     right: 10px;
+    *{
+      margin: 0;
+    }
     .quadratino{
       background:$White;
       margin: 10px;
@@ -97,6 +100,9 @@ export default {
           font-size:1rem;
           font-weight:700;
         }
+      }
+      .icon{
+        font-size: 2rem;
       }
     }
   }

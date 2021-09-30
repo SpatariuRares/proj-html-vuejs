@@ -4,11 +4,14 @@ import "bootstrap"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faAtlassian } from '@fortawesome/free-brands-svg-icons'
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons' 
 import { faAddressBook } from '@fortawesome/free-solid-svg-icons' 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome' 
 
+
+library.add(faAtlassian)
 library.add(faAddressBook)
 library.add(faArrowRight)
 library.add(faPhoneAlt)
