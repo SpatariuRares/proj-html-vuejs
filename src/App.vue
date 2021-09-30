@@ -5,11 +5,23 @@
     <Jumbo/>
     <div class="marketing">
       <Marketing v-for="(item,index) in market" :key="index"
-      :item="item"/>
+      :item="item"
+      :button="true"/>
     </div>
     <WorkWith/>
     <Contact/>
-    <Trust/>
+    <Trust
+    :textcenter="true"
+    :trust="trust"/>
+    <div class="py-5 b-GrayNurse">
+      <Marketing 
+      :item="work"
+      :button="true"/>
+    </div>
+    <Marketing 
+    class="my-5"
+      :item="kate"
+      :button="false"/>
   </div>
 </template>
 
@@ -35,6 +47,9 @@ export default {
   data(){
     return {
       market:image.Market,
+      trust:image.Trust,
+      work:image.work,
+      kate:image.kate,
     }
   }
 }
