@@ -116,4 +116,22 @@ const kate={
     work:"Marketing Consultant - Abstract"
 }
 
-export {jumboImage,jumboicon,logoImage,jumboAvatar,Market,WorkWith,contact,Trust,work,kate}
+const Resource=[
+    {
+        image:"blog-posts-6.jpg",
+        text:"Marketing Tips And Tricks For Your Website  ",
+        alt:"case-studies-1",
+    },
+    {
+        image:"blog-posts-5.jpg",
+        text:"How to Write Stunning Blog Post Titles  ",
+        alt:"case-studies-1",
+    },
+    {
+        image:"blog-posts-4.jpg",
+        text:"Techniques to Reduce Facebook Ads Spend ",
+        alt:"case-studies-1",
+    },
+]
+
+export {jumboImage,jumboicon,logoImage,jumboAvatar,Market,WorkWith,contact,Trust,work,kate,Resource}

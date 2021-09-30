@@ -1,6 +1,5 @@
 <template>
-<div class="jumbo">
-  <!-- <img class="jumbo" :src="require(`@/assets/images/${jumbo.link}`)" :alt="jumbo.alt"> -->
+<div class="jumbo" :class="position?'header':'main'">
   <div class="opacity">
     <div class="container text">
       <div class="row">
@@ -17,35 +16,14 @@
             <font-awesome-icon  icon="arrow-right" />
           </button>
         </div>
-        <div class="col-6 form">
-          <div class="callback d-flex p-3 flex-column justify-content-center align-items-center">
-            <img class="avatar" :src="require(`@/assets/images/${avatar.link}`)" :alt="avatar.alt">
-            <h5 class="py-2 m-0">Richard Madsen</h5>
-            <p class="py-2 m-0">Marketing Consultant Expert</p>
-            <div class="d-flex orange py-2 m-0">
-              <font-awesome-icon icon="phone-alt" />
-              (555) 802-1234
-            </div>
-            <form action="" class="d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-center my-2">
-                <input type="text" name="name" id="name" placeholder="Your Name*" required>
-                <img :src="require(`@/assets/images/${icon.link}`)" :alt="avatar.alt">
-              </div>
-              <div class="d-flex justify-content-between align-items-center my-2">
-                <input type="email" name="email" id="email" placeholder="Your Email*" required>
-              </div>
-              <div class="d-flex justify-content-between align-items-center my-2">
-                <input type="tel" name="number" id="number" placeholder="Your Number*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10" minlength="10">
-              </div>
-              <button class="bottone my-2">Get a callback</button>
-            </form>
-              <p>By submitting my data | agree to be contacted</p>
-          </div>
-        </div>
+        <Form
+        :avatar="avatar"
+        :icon="icon"
+        />
       </div>
     </div>
   </div>
-  <div class="position-absolute d-flex  flex-column  quadratini">
+  <div v-if="quadratini" class="position-absolute d-flex  flex-column  quadratini">
     <div class="d-flex flex-column justify-content-between align-items-center  quadratino">
       <font-awesome-icon class="icon" :icon="['fab', 'atlassian']" />
       <p>demos</p>
@@ -59,27 +37,33 @@
 </template>
 
 <script>
-import * as image from "@/assets/data/image.js"
+import Form from '@/components/Form.vue';
 export default {
   name: 'Jumbo',
-  data(){
-    return {
-      jumbo: image.jumboImage,
-      avatar: image.jumboAvatar,
-      icon:image.jumboicon,
-    }
-  }
+  components:{
+    Form,
+  },
+  props:["quadratini","jumbo","avatar","icon","position"],
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "@/style/vars.scss";
-.jumbo{
+.header{
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../assets/images/marketing-intro.jpg");
   background-size: cover;
-  padding-top: 50px;
   position: relative;
+  .text{
+    position: relative;
+    top: 40px;
+ }
+}
+.main{
+  background-color: $Black;
+  padding: 50px;
+}
+.jumbo{
   .quadratini{
     top: 20px;
     right: 10px;
@@ -110,8 +94,6 @@ export default {
 }
 .text{
   color: $White;
-  position: relative;
-  top: 40px;
   .descrizione{
 
     .bottone{

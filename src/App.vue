@@ -2,7 +2,12 @@
   <div id="app">
     <!-- <font-awesome-icon icon="spinner" /> -->
     <Header />
-    <Jumbo/>
+    <Jumbo
+    :jumbo="jumbo"
+    :avatar="avatar"
+    :icon="icon"
+    :position="true"
+    :quadratini="true"/>
     <div class="marketing">
       <Marketing v-for="(item,index) in market" :key="index"
       :item="item"
@@ -11,7 +16,6 @@
     <WorkWith/>
     <Contact/>
     <Trust
-    :textcenter="true"
     :trust="trust"/>
     <div class="py-5 b-GrayNurse">
       <Marketing 
@@ -22,6 +26,15 @@
     class="my-5"
       :item="kate"
       :button="false"/>
+    <div class="b-GrayNurse">
+      <Resource/>
+    </div>
+    <Jumbo
+    :jumbo="jumbo"
+    :avatar="avatar"
+    :icon="icon"
+    :position="false"
+    :quadratini="false"/>
   </div>
 </template>
 
@@ -32,6 +45,7 @@ import Marketing from './components/Marketing.vue';
 import WorkWith from './components/WorkWith.vue';
 import Contact from './components/Contact.vue';
 import Trust from './components/Trust.vue';
+import Resource from './components/Resource.vue';
 import * as image from "@/assets/data/image.js"
 
 export default {
@@ -42,7 +56,8 @@ export default {
     Marketing,
     WorkWith,
     Contact,
-    Trust
+    Trust,
+    Resource
   },
   data(){
     return {
@@ -50,6 +65,9 @@ export default {
       trust:image.Trust,
       work:image.work,
       kate:image.kate,
+      jumbo: image.jumboImage,
+      avatar: image.jumboAvatar,
+      icon:image.jumboicon,
     }
   }
 }
