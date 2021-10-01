@@ -1,12 +1,12 @@
 <template>
-<div class="jumbo" :class="position?'header':'main'">
+<div class="jumbo header">
   <div class="opacity">
     <div class="container text">
       <div class="row">
         <div class="col-6 px-5 descrizione">
-          <h1>
+          <h2>
             Unlock your Online<br>Growth Potential
-          </h1>
+          </h2>
           <h6 class="py-3">
             Online marketing to secure customer retention,
             leads, and sales. We focus on the bigger picture.
@@ -17,6 +17,7 @@
           </button>
         </div>
         <Form
+        class="col-6"
         :avatar="avatar"
         :icon="icon"
         />
@@ -43,7 +44,7 @@ export default {
   components:{
     Form,
   },
-  props:["quadratini","jumbo","avatar","icon","position"],
+  props:["quadratini","jumbo","avatar","icon"],
 }
 </script>
 

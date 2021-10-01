@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6 form">
+  <div class=" form">
     <div class="callback d-flex p-3 flex-column justify-content-center align-items-center">
       <img class="avatar" :src="require(`@/assets/images/${avatar.link}`)" :alt="avatar.alt">
       <h5 class="py-2 m-0">Richard Madsen</h5>

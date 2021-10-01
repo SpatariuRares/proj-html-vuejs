@@ -4,12 +4,26 @@ import "bootstrap"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { faAtlassian } from '@fortawesome/free-brands-svg-icons'
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons' 
 import { faAddressBook } from '@fortawesome/free-solid-svg-icons' 
+
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+//import { faYouTube } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { faAtlassian } from '@fortawesome/free-brands-svg-icons'
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome' 
 
+library.add(faFacebookF)
+library.add(faTwitter)
+library.add(faInstagram)
+//library.add(faYouTube)
+library.add(faLinkedinIn)
+library.add(faTiktok)
 
 library.add(faAtlassian)
 library.add(faAddressBook)

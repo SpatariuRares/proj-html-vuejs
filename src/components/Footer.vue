@@ -1,0 +1,63 @@
+<template>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-4">
+      <h4>
+        {{text.title}}
+      </h4>
+      <ul class="d-flex px-0 py-3 list-unstyled">
+        <li class="px-2" v-for="(social,index) in socials" :key="index">
+          <a :href="social.link">
+            <font-awesome-icon :icon="['fab', social.icon]" />
+          </a>
+        </li>  
+      </ul> 
+    </div>
+    <div class="d-flex col-8 list">
+      <ul class="col-4 list-unstyled" v-for="(list,indexlist) in lists" :key="indexlist">
+        <li>
+          <h6>
+          {{list.title}}
+          </h6>
+        </li>
+        <li class="py-1" v-for="(link,index) in list.links" :key="index+'list'">
+          <a :href="link.link">
+            {{link.text}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</template>
+
+<script>
+import * as link from '@/assets/data/link.js';
+import * as text from '@/assets/data/text.js';
+
+export default {
+  name: 'footer',
+  data(){
+    return {
+      socials:link.social,
+      text:text.footer,
+      lists:link.footerLink,
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+@import "@/style/vars.scss";
+a{
+  color: $Black;
+  text-decoration: none;
+}
+.list{
+  font-size: 0.9rem;
+  a:hover{
+    color: $Black;
+  }
+}
+</style>
