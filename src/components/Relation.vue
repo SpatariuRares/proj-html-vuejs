@@ -43,8 +43,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "~bootstrap/scss/bootstrap.scss";
+<style scoped lang="scss">
 @import "@/style/general.scss";
 
 .icon{

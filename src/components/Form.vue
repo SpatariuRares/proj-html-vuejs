@@ -21,15 +21,21 @@
         </div>
         <button class="bottone my-2">Get a callback</button>
       </form>
-        <p>By submitting my data | agree to be contacted</p>
+        <p>{{text.agre}}</p>
     </div>
   </div>
 </template>
 
 <script>
+import * as formtext from "@/assets/data/text.js"
 export default {
   name: 'Form',
   props:["avatar","icon"],
+  data(){
+    return{
+      text:formtext.formText
+    }
+  }
 }
 </script>
 

@@ -8,6 +8,9 @@ const jumboMain={
 
 const footer={
     title: "Grow Your Online Business Strategically, and Improve Customer Retention.",
+    copyright: "©2020 • Avada Consultant • Powered by WordPress",
+    callUs:"Call Us (555) 802-1234",
+    email: "info@yourcompany.com",
 }
 const relation=[
     {
@@ -38,4 +41,8 @@ const relationIcon=[
     },
 ]
 
-export {jumboMain,footer,relation,relationIcon}
+
+const formText={
+    agre: "By submitting my data | agree to be contacted",
+}
+export {jumboMain,footer,relation,relationIcon,formText}
