@@ -19,33 +19,7 @@
       <Marketing 
       :item="work"
       :button="true"/>
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-6">
-            <div v-for="(item,index) in relation" :key="index">
-              <h2>{{item.title}}</h2>
-              <p>{{item.text}}</p>
-            </div>
-          </div>
-          <div class="d-flex flex-column col-6">
-            <div class="d-flex align-items-center p-4" v-for="(item,index) in relationicon" :key="index">
-              <div class="col-2 mx-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <font-awesome-icon icon="square-full" class="orange"/>  
-                </div>
-              </div>
-              <div class="d-flex flex-column col-8">
-                <h3>
-                  {{item.title}}
-                </h3>
-                <p>
-                  {{item.text}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Relation/>
       <Awards/>
     </div>
     <Marketing 
@@ -76,6 +50,7 @@ import Footer from './components/Footer.vue';
 import Resource from './components/Resource.vue';
 import Chat from './components/Chat.vue';
 import Awards from './components/Awards.vue';
+import Relation from './components/Relation.vue';
 import * as image from "@/assets/data/image.js";
 import * as text from "@/assets/data/text.js"
 
@@ -93,6 +68,7 @@ export default {
     Footer,
     Chat,
     Awards,
+    Relation
   },
   data(){
     return {
