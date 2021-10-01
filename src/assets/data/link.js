@@ -119,7 +119,7 @@ const social=[
     {
         text: 'youtube',
         link:"#",
-        icon: 'instagram',
+        icon: 'youtube',
     },
     {
         text: 'linkedin-in',

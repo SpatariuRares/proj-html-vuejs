@@ -3,7 +3,7 @@
   <div class="opacity">
     <div class="container text">
       <div class="row">
-        <div class="col-6 px-5 descrizione">
+        <div class="col-12 col-lg-6 py-5 descrizione">
           <h2>
             Unlock your Online<br>Growth Potential
           </h2>
@@ -17,14 +17,14 @@
           </button>
         </div>
         <Form
-        class="col-6"
+        class="col-12 col-lg-6"
         :avatar="avatar"
         :icon="icon"
         />
       </div>
     </div>
   </div>
-  <div v-if="quadratini" class="position-absolute d-flex  flex-column  quadratini">
+  <div v-if="quadratini" class="position-absolute d-none d-lg-flex  flex-column  quadratini">
     <div class="d-flex flex-column justify-content-between align-items-center  quadratino">
       <font-awesome-icon class="icon" :icon="['fab', 'atlassian']" />
       <p>demos</p>

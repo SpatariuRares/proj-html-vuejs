@@ -5,6 +5,9 @@ const jumboImage={
 const jumboAvatar={
     alt: 'marketing consultant expert',
     link: 'marketing-consultant-expert.jpg',
+    name: 'Richard Madsen',
+    job: 'Marketing Consultant Expert',
+    number: '(555) 802-1234',
 };
 const jumboicon={
     alt: 'image',
@@ -120,6 +123,8 @@ const kate={
     text:"kate Schalder",
     work:"Marketing Consultant - Abstract"
 }
+
+
 
 const Resource=[
     {

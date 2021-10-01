@@ -1,15 +1,15 @@
 <template>
-    <div class="container my-5">
+  <div class="container my-5">
     <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6">
         <div v-for="(item,index) in relation" :key="index">
             <h2>{{item.title}}</h2>
             <p>{{item.text}}</p>
         </div>
-        </div>
-        <div class="d-flex flex-column col-6">
+      </div>
+      <div class="d-flex flex-column col-lg-6">
         <div class="d-flex align-items-center p-4" v-for="(item,index) in relationicon" :key="index">
-            <div class="col-2 mx-3">
+            <div class=" mx-3">
             <div class="icon d-flex align-items-center justify-content-center">
                 <font-awesome-icon icon="square-full" class="orange"/>  
             </div>
@@ -25,7 +25,7 @@
         </div>
         </div>
     </div>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -33,7 +33,7 @@
 import * as text from "@/assets/data/text.js"
 
 export default {
-  name: 'App',
+  name: 'Relation',
   data(){
     return {
       relation:text.relation,
@@ -47,8 +47,7 @@ export default {
 @import "@/style/general.scss";
 
 .icon{
-  width: 100%;
-  aspect-ratio: 1/1;
+  padding:20px;
   border: 1px solid $Ectasy;
   align-self: stretch;
   border-radius:20%;

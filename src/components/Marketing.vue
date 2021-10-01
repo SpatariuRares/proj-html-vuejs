@@ -1,10 +1,10 @@
 <template>
   <div class="container item">
     <div class="row d-flex" :class="item.left?'flex-row-reverse':null">
-      <div class="col-6">
+      <div class="col-12 col-lg-6">
         <img class="jumbo" :src="require(`@/assets/images/${item.svg}`)" alt="">
       </div>
-      <div class="col-6 p-5">
+      <div class="col-12 col-lg-6 p-5">
         <p v-if="item.little!=null">{{item.little}}</p>
         <h3 class="title my-4">{{item.title}}</h3>
         <p class="text">{{item.text}}</p>

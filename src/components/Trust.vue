@@ -2,7 +2,7 @@
 <div class="container my-5">
   <h2 :class="textcenter?'text-center':null" class="my-4">Trusted by Leading Organisations</h2>
   <div class="row d-flex">
-    <div class="col-4 d-flex flex-column justify-content-between" v-for="(example,index) in trust" :key="index">
+    <div class="col-lg-4 d-flex flex-column justify-content-between" v-for="(example,index) in trust" :key="index">
       <div class="position-relative">
         <img :src="require(`@/assets/images/${example.image}`)" :alt="example.alt">
         <div class="overlay-orange"></div>

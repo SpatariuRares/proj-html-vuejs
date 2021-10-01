@@ -2,7 +2,7 @@
   <div class=" container">
     <h3 class="text-center" >Awards</h3>
     <div class="row">
-      <div class="col-3 d-flex flex-column align-items-center justify-content-center" v-for="(item,index) in awards" :key="index">
+      <div class="col-6 col-lg-3 d-flex flex-column align-items-center justify-content-center" v-for="(item,index) in awards" :key="index">
         <img :src="require(`@/assets/images/${item.image}`)" :alt="item.alt">
         <p>{{item.text}}</p>
       </div>

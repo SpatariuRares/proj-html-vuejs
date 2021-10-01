@@ -1,13 +1,13 @@
 <template>
-<div class="container py-5">
-  <div class="d-flex justify-content-between">
-    <h2 class="my-4 col-6">Marketing Tips And Tricks How to Write Stunning Blog Techniques to Reduce For Your Website Post Titles Facebook Ads Spend </h2>
-    <div class="d-flex flex-column justify-content-center">
+<div class="container">
+  <div class="d-flex flex-column py-4 flex-lg-row justify-content-between">
+    <h2 class="my-4 col-12 col-lg-6">Marketing Tips And Tricks How to Write Stunning Blog Techniques to Reduce For Your Website Post Titles Facebook Ads Spend </h2>
+    <div class=" d-lg-flex flex-column justify-content-center">
       <button class="bottone">Read More Case Studies</button>
     </div>
   </div>
   <div class="row d-flex">
-    <div class="col-4 d-flex flex-column justify-content-between" v-for="(example,index) in resource" :key="index">
+    <div class="col-12 col-lg-4 d-flex flex-column justify-content-between" v-for="(example,index) in resource" :key="index">
       <div class="position-relative">
         <img :src="require(`@/assets/images/${example.image}`)" :alt="example.alt">
         <div class="overlay-orange"></div>

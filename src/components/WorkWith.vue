@@ -3,8 +3,8 @@
   <div class="row">
     <h2>Some Brands We Work With</h2>
     <p>Quisque aliquet, libero consequat elementum convallis.</p>
-    <div class="d-flex my-5">
-       <img v-for="(partner,index) in partners" :key="index" class="col-2 px-4" :src="require(`@/assets/images/${partner.path}`)" :alt="partner.alt">
+    <div class="d-flex flex-wrap my-5">
+       <img v-for="(partner,index) in partners" :key="index" class="col-4 col-lg-2 py-2 px-4" :src="require(`@/assets/images/${partner.path}`)" :alt="partner.alt">
     </div>
   </div>
 </div>

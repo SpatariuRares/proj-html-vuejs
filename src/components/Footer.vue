@@ -1,7 +1,7 @@
 <template>
 <div class="container my-5">
   <div class="row">
-    <div class="col-4">
+    <div class="col-12 col-lg-4">
       <h4>
         {{text.title}}
       </h4>
@@ -13,8 +13,8 @@
         </li>  
       </ul> 
     </div>
-    <div class="d-flex col-8 list">
-      <ul class="col-4 list-unstyled" v-for="(list,indexlist) in lists" :key="indexlist">
+    <div class="d-flex col-12 col-lg-8 flex-wrap list">
+      <ul class="col-12 col-lg-4 list-unstyled" v-for="(list,indexlist) in lists" :key="indexlist">
         <li>
           <h6>
           {{list.title}}
@@ -27,7 +27,7 @@
         </li>
       </ul>
     </div>
-    <div class="d-flex justify-content-between pt-5 pb-3" >
+    <div class="d-flex flex-column flex-lg-row justify-content-between pt-5 pb-3" >
       <div>{{text.copyright}}</div>
       <div>{{text.callUs}}</div>
       <div>{{text.email}}</div>

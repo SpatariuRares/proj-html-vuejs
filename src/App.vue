@@ -92,12 +92,4 @@ export default {
 .marketing{
   margin: 150px 0;
 }
-.icon{
-  width: 100%;
-  aspect-ratio: 1/1;
-  border: 1px solid $Ectasy;
-  align-self: stretch;
-  border-radius:20%;
-  font-size:1.5rem;
-}
 </style>

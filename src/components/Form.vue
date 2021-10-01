@@ -2,11 +2,11 @@
   <div class=" form">
     <div class="callback d-flex p-3 flex-column justify-content-center align-items-center">
       <img class="avatar" :src="require(`@/assets/images/${avatar.link}`)" :alt="avatar.alt">
-      <h5 class="py-2 m-0">Richard Madsen</h5>
-      <p class="py-2 m-0">Marketing Consultant Expert</p>
+      <h5 class="py-2 m-0">{{avatar.name}}</h5>
+      <p class="py-2 m-0">{{avatar.job}}</p>
       <div class="d-flex orange py-2 m-0">
         <font-awesome-icon icon="phone-alt" />
-        (555) 802-1234
+        {{avatar.number}}
       </div>
       <form action="" class="d-flex flex-column">
         <div class="d-flex justify-content-between align-items-center my-2">
@@ -30,7 +30,7 @@
 import * as formtext from "@/assets/data/text.js"
 export default {
   name: 'Form',
-  props:["avatar","icon"],
+  props:["avatar","icon","name"],
   data(){
     return{
       text:formtext.formText
