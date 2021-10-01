@@ -1,43 +1,32 @@
 <template>
   <div class="container ">
-    <div class="d-flex align-items-center justify-content-between header my-3">
-      <img :src="require(`@/assets/images/${logo.link}`)" :alt="logo.alt">
-      <ul class="d-none d-lg-flex m-0">
-        <li v-for="(link,index) in links" :key="index" :class="link.active?'active':null" >
-          {{link.text}} 
-          <font-awesome-icon v-if="link.icon!=null" :icon="link.icon" />
-        </li>
-      </ul>
-      <div class="d-none d-lg-flex align-items-center ps-3">
-        <font-awesome-icon icon="phone-alt" class="orange"/>
-        <p class="m-0 ps-2">(555) 802-1234</p>
+    <nav class="navbar navbar-expand-lg navbar-light header">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img :src="require(`@/assets/images/${logo.link}`)" :alt="logo.alt"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li v-for="(link,index) in links" :key="index" class="text-center" >
+              <div class="d-inline-block" :class="link.active?'active':null">
+                {{link.text}} 
+                <font-awesome-icon v-if="link.icon!=null" :icon="link.icon" />
+              </div>
+            </li>
+          </ul>
+          <div class="d-none d-lg-flex align-items-center p-3">
+            <font-awesome-icon icon="phone-alt" class="orange"/>
+            <p class="m-0 ps-2">(555) 802-1234</p>
+          </div>
+        <form class="d-flex">
+          <button class="bottone opac d-none d-lg-block">
+            Free Quote
+          </button>
+        </form>
       </div>
-      <button class="bottone opac d-none d-lg-block">
-        Free Quote
-      </button>
-      <button class="hamburgerMenu d-inline-block d-lg-none" @click="changeHamburger">
-        <span class="bar1" :class="hamburger?'animated':null"></span>
-        <span class="bar2" :class="hamburger?'animated':null"></span>
-        <span class="bar3" :class="hamburger?'animated':null"></span>
-      </button>
     </div>
-    <div v-if="hamburger" class="text-center hamburger" :class="hamburger?'animation' :null">
-      <ul class="d-block d-lg-none m-0">
-      <li v-for="(link,index) in links" :key="index" class="d-flex justify-content-center">
-        <div class="py-2" :class="link.active?'active':null" >
-          {{link.text}} 
-          <font-awesome-icon v-if="link.icon!=null" :icon="link.icon" />
-        </div>
-      </li>
-      </ul>
-      <div class="d-flex py-2 d-lg-none justify-content-center align-items-center ps-3">
-        <font-awesome-icon icon="phone-alt" class="orange"/>
-        <p class="m-0 ps-2">(555) 802-1234</p>
-      </div>
-      <button class="bottone opac d-lg-none py-2">
-        Free Quote
-      </button>
-    </div>
+  </nav>
   </div>
 </template>
 
@@ -71,58 +60,14 @@ export default {
     li{
       margin: 0 10px;
       padding-bottom: 5px;
-      &.active,
-      &:hover{
-        color: $Ectasy;
-        border-bottom: 2px solid $Ectasy
+      div{
+        &.active,
+        &:hover{
+          color: $Ectasy;
+          border-bottom: 2px solid $Ectasy
+        }
       }
     }
-  }
-}
-.hamburger{
-  height:0;
-  ul{
-    list-style: none;
-    padding-left: 1rem;
-    li{
-      margin: 0 10px;
-      padding-bottom: 5px;
-      .active,
-      div:hover{
-        color: $Ectasy;
-        border-bottom: 2px solid $Ectasy
-      }
-    }
-  }
-  &.animation{
-    margin: 10px;
-    height: 100%;
-  }
-
-}
-.bar1.animated {
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
-.bar2.animated {opacity: 0;}
-.bar3.animated {
-    transform: rotate(45deg) translate(-6px, -6px);
-}
-
-
-.hamburgerMenu{
-  outline:0;
-  border: 1px solid $Ectasy;
-  background-color:rgba($Ectasy, 0.2);
-  width:50px;
-  border-radius: 5px;
-  line-height:5px;
-  padding: 5px;
-  span{
-    display: inline-block;
-    width: 80%;
-    height: 5px;
-    background-color:rgba($Ectasy,1);
-    transition: 0.4s;
   }
 }
 .bottone{
