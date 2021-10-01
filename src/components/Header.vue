@@ -16,9 +16,9 @@
         Free Quote
       </button>
       <button class="hamburgerMenu d-inline-block d-lg-none" @click="changeHamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="bar1" :class="hamburger?'animated':null"></span>
+        <span class="bar2" :class="hamburger?'animated':null"></span>
+        <span class="bar3" :class="hamburger?'animated':null"></span>
       </button>
     </div>
     <div v-if="hamburger" class="text-center hamburger" :class="hamburger?'animation' :null">
@@ -97,8 +97,15 @@ export default {
   &.animation{
     margin: 10px;
     height: 100%;
-    animation: entrata 0.4s ;
   }
+
+}
+.bar1.animated {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+.bar2.animated {opacity: 0;}
+.bar3.animated {
+    transform: rotate(45deg) translate(-6px, -6px);
 }
 
 
@@ -114,7 +121,8 @@ export default {
     display: inline-block;
     width: 80%;
     height: 5px;
-    background-color:rgba($Ectasy,1)
+    background-color:rgba($Ectasy,1);
+    transition: 0.4s;
   }
 }
 .bottone{
