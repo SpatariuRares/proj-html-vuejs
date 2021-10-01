@@ -9,5 +9,33 @@ const jumboMain={
 const footer={
     title: "Grow Your Online Business Strategically, and Improve Customer Retention.",
 }
+const relation=[
+    {
+        title:"We Build Relationships",
+        text:"Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur",
+    },
+    {
+        title:"Proprietary Processes",
+        text:"Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur",
+    }
+]
 
-export {jumboMain,footer}
+const relationIcon=[
+    {
+        icon: "",
+        title:"Accountably",
+        text:"Curabitur ac leo nunc vestibulum",
+    },
+    {
+        icon: "",
+        title:"Transparency",
+        text:"Curabitur ac leo nunc vestibulum",
+    },
+    {
+        icon: "",
+        title:"Investiment",
+        text:"Curabitur ac leo nunc vestibulum",
+    },
+]
+
+export {jumboMain,footer,relation,relationIcon}

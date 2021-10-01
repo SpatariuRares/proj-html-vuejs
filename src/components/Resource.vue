@@ -8,7 +8,10 @@
   </div>
   <div class="row d-flex">
     <div class="col-4 d-flex flex-column justify-content-between" v-for="(example,index) in resource" :key="index">
-      <img :src="require(`@/assets/images/${example.image}`)" :alt="example.alt">
+      <div class="position-relative">
+        <img :src="require(`@/assets/images/${example.image}`)" :alt="example.alt">
+        <div class="overlay-orange"></div>
+      </div>
       <h3 class="my-4">{{example.text}}</h3>
     </div>
   </div>

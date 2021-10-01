@@ -7,6 +7,9 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons' 
 import { faAddressBook } from '@fortawesome/free-solid-svg-icons' 
+import { faCommentAlt } from '@fortawesome/free-solid-svg-icons' 
+import { faTimes } from '@fortawesome/free-solid-svg-icons' 
+import { faSquareFull } from '@fortawesome/free-solid-svg-icons' 
 
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -18,6 +21,9 @@ import { faAtlassian } from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome' 
 
+library.add(faSquareFull)
+library.add(faTimes)
+library.add(faCommentAlt)
 library.add(faFacebookF)
 library.add(faTwitter)
 library.add(faInstagram)

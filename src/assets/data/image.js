@@ -76,6 +76,11 @@ const contact={
     targer:"Drive Leads and Sales with Avada ",
     alt:"marketing-expert-cta"
 }
+const chat={
+    image:"marketing-expert-cta.png",
+    alt:"c",
+    text:"This is a free FluhSpot live Oat You can create your we chat flows and engage your customers with Awda & HubSpot!"
+}
 
 const Trust=[
     {
@@ -133,5 +138,26 @@ const Resource=[
         alt:"case-studies-1",
     },
 ]
-
-export {jumboImage,jumboicon,logoImage,jumboAvatar,Market,WorkWith,contact,Trust,work,kate,Resource}
+const Awards=[
+    {
+        image:"award-a.png",
+        text:"How Spaces attracted five million visitors by improving the content ",
+        alt:"award-a.png"
+    },
+    {
+        image:"award-b.png",
+        alt:"award-b.png",
+        text:"Creativity helped How Hemisferio to increase their brand reach vertically ",
+    },
+    {
+        image:"award-c.png",
+        alt:"award-c.png",
+        text:"How DigitalBox used Al-powered data insight to boost sales ",
+    },
+    {
+        image:"award-d.png",
+        alt:"award-d.png",
+        text:"How DigitalBox used Al-powered data insight to boost sales ",
+    },
+]
+export {jumboImage,jumboicon,logoImage,jumboAvatar,Market,WorkWith,contact,Trust,work,kate,Resource,chat,Awards}

@@ -16,3 +16,17 @@
 .b-GrayNurse{
   background-color:$GrayNurse;
 }
+.b-orange{
+  background-color:$Ectasy;
+}
+
+.overlay-orange{
+  inset:0;
+  position:absolute;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 30%, rgba($Ectasy,0.7) 100%);
+  opacity: 0;
+}
+.overlay-orange:hover{
+  opacity: 1;
+}

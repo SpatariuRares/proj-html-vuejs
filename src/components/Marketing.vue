@@ -6,7 +6,7 @@
       </div>
       <div class="col-6 p-5">
         <p v-if="item.little!=null">{{item.little}}</p>
-        <h2 class="title my-4">{{item.title}}</h2>
+        <h3 class="title my-4">{{item.title}}</h3>
         <p class="text">{{item.text}}</p>
         <p v-if="item.work!=null">{{item.work}}</p>
         <button class="bottone" v-if="button">{{item.button}}</button>

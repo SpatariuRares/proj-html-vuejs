@@ -19,6 +19,34 @@
       <Marketing 
       :item="work"
       :button="true"/>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-6">
+            <div v-for="(item,index) in relation" :key="index">
+              <h2>{{item.title}}</h2>
+              <p>{{item.text}}</p>
+            </div>
+          </div>
+          <div class="d-flex flex-column col-6">
+            <div class="d-flex align-items-center p-4" v-for="(item,index) in relationicon" :key="index">
+              <div class="col-2 mx-3">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <font-awesome-icon icon="square-full" class="orange"/>  
+                </div>
+              </div>
+              <div class="d-flex flex-column col-8">
+                <h3>
+                  {{item.title}}
+                </h3>
+                <p>
+                  {{item.text}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Awards/>
     </div>
     <Marketing 
     class="my-5"
@@ -32,6 +60,7 @@
     :avatar="avatar"
     :icon="icon"/>
     <Footer/>
+    <Chat/>
   </div>
 </template>
 
@@ -45,7 +74,10 @@ import Contact from './components/Contact.vue';
 import Trust from './components/Trust.vue';
 import Footer from './components/Footer.vue';
 import Resource from './components/Resource.vue';
-import * as image from "@/assets/data/image.js"
+import Chat from './components/Chat.vue';
+import Awards from './components/Awards.vue';
+import * as image from "@/assets/data/image.js";
+import * as text from "@/assets/data/text.js"
 
 export default {
   name: 'App',
@@ -59,6 +91,8 @@ export default {
     Trust,
     Resource,
     Footer,
+    Chat,
+    Awards,
   },
   data(){
     return {
@@ -69,6 +103,8 @@ export default {
       jumbo: image.jumboImage,
       avatar: image.jumboAvatar,
       icon:image.jumboicon,
+      relation:text.relation,
+      relationicon:text.relationIcon,
     }
   }
 }
@@ -79,5 +115,13 @@ export default {
 @import "@/style/general.scss";
 .marketing{
   margin: 150px 0;
+}
+.icon{
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 1px solid $Ectasy;
+  align-self: stretch;
+  border-radius:20%;
+  font-size:1.5rem;
 }
 </style>

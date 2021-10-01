@@ -27,6 +27,11 @@
         </li>
       </ul>
     </div>
+    <div class="d-flex justify-content-between pt-5 pb-3" >
+      <div>©2020 • Avada Consultant • Powered by WordPress</div>
+      <div>Call Us (555) 802-1234</div>
+      <div>infopyourcompany.cana</div>
+    </div>
   </div>
 </div>
 </template>
