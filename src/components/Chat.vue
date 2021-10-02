@@ -1,6 +1,6 @@
 <template>
-  <div class=" col-3 d-flex flex-column align-items-end chat">
-    <div v-if="show" class=" chat-mesage p-3">
+  <div class=" col-6 col-lg-3 d-flex flex-column align-items-end chat">
+    <div v-if="show" class=" d-lg-block chat-mesage p-3">
       <img :src="require(`@/assets/images/${chat.image}`)" :alt="chat.alt">
       <div class="text-end">
         <font-awesome-icon icon="times" @click="changeshow"/>

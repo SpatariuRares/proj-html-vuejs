@@ -52,7 +52,7 @@ export default {
 <style scoped lang="scss">
 @import "@/style/vars.scss";
 .header{
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../assets/images/marketing-intro.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url($JumboIntro);
   background-size: cover;
   position: relative;
   .text{
