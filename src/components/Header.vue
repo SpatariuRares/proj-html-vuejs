@@ -11,12 +11,12 @@
             <li v-for="(link,index) in links" :key="index" class="text-center" >
               <div class="d-inline-block" :class="link.active?'active':null">
                 {{link.text}} 
-                <font-awesome-icon v-if="link.icon!=null" :icon="link.icon" />
+                 <i  v-if="link.icon!=null" class="fas" :class="link.icon"></i>
               </div>
             </li>
           </ul>
           <div class="d-none d-lg-flex align-items-center p-3">
-            <font-awesome-icon icon="phone-alt" class="orange"/>
+            <i class="fas fa-phone-alt orange"></i>
             <p class="m-0 ps-2">(555) 802-1234</p>
           </div>
         <form class="d-flex">

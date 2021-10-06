@@ -1,7 +1,7 @@
 <template>
 <div class="container my-5">
-  <div class="row d-flex flex-column justify-content-center align-items-center">
-    <div class="d-flex col-lg-3 flex-column align-items-center">
+  <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center">
+    <div class="d-flex col-lg-3 flex-column flex-lg-row align-items-center">
       <div class="col-3">
         <img  :src="require(`@/assets/images/${contact.image}`)" :alt="contact.alt">
       </div>
@@ -15,7 +15,7 @@
     </div>
     <div class="col-lg-3 text-center">
       <button class="bottone opac">
-        <font-awesome-icon icon="phone-alt" class="orange"/>
+        <i class="fas fa-phone-alt orange"></i>
         {{contact.number}}
       </button>
     </div>

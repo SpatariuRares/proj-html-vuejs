@@ -1,12 +1,12 @@
 const headerlink=[
     {
         text: 'Home',
-        icon: 'chevron-down',
+        icon: 'fa-chevron-down',
         active: true,
     },
     {
         text: 'Service',
-        icon: 'chevron-down',
+        icon: 'fa-chevron-down',
         active: false,
     },
     {
@@ -104,32 +104,33 @@ const social=[
     {
         text: 'facebook',
         link:"#",
-        icon: 'facebook-f',
+        icon: 'fa-facebook-f',
     },
     {
         text: 'Twitter',
         link:"#",
-        icon: 'twitter',
+        icon: 'fa-twitter',
     },
     {
         text: 'instagram',
         link:"#",
-        icon: 'instagram',
+        icon: 'fa-instagram',
     },
     {
         text: 'youtube',
         link:"#",
-        icon: 'youtube',
+        icon: 'fa-youtube',
     },
     {
         text: 'linkedin-in',
         link:"#",
-        icon: 'linkedin-in',
+        icon: 'fa-linkedin-in',
     },
     {
         text: 'tiktok',
         link:"#",
-        icon: 'tiktok',
+        icon: 'fa-tiktok',
     },
 ]
+
 export {headerlink,footerLink,social}

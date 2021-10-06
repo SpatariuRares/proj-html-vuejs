@@ -11,7 +11,7 @@
         <div class="d-flex align-items-center p-4" v-for="(item,index) in relationicon" :key="index">
             <div class=" mx-3">
             <div class="icon d-flex align-items-center justify-content-center">
-                <font-awesome-icon icon="square-full" class="orange"/>  
+              <i class="fas fa-square orange"></i>
             </div>
             </div>
             <div class="d-flex flex-column col-8">

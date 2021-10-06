@@ -5,7 +5,7 @@
       <h5 class="py-2 m-0">{{avatar.name}}</h5>
       <p class="py-2 m-0">{{avatar.job}}</p>
       <div class="d-flex orange py-2 m-0">
-        <font-awesome-icon icon="phone-alt" />
+         <i class="fas fa-phone-alt "></i>
         {{avatar.number}}
       </div>
       <form action="" class="d-flex flex-column">

@@ -13,7 +13,7 @@
           </h6>
           <button class="bottone">
             Our service
-            <font-awesome-icon  icon="arrow-right" />
+            <i class="fas fa-arrow-right"></i>
           </button>
         </div>
         <Form
@@ -26,7 +26,7 @@
   </div>
   <div v-if="quadratini" class="position-absolute d-none d-lg-flex  flex-column  quadratini">
     <div class="d-flex flex-column justify-content-between align-items-center  quadratino">
-      <font-awesome-icon class="icon" :icon="['fab', 'atlassian']" />
+      <i class="fab fa-atlassian icon"></i>
       <p>demos</p>
     </div>
     <div class="d-flex flex-column justify-content-between align-items-center quadratino">

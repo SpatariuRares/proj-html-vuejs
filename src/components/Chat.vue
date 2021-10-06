@@ -3,14 +3,14 @@
     <div v-if="show" class=" d-lg-block chat-mesage p-3">
       <img :src="require(`@/assets/images/${chat.image}`)" :alt="chat.alt">
       <div class="text-end">
-        <font-awesome-icon icon="times" @click="changeshow"/>
+        <i class="fas fa-times" @click="changeshow"></i>
       </div>
       <p>
         {{chat.text}}
       </p>
     </div>
     <div class="b-orange d-flex messagio justify-content-center align-items-center my-3" @click="changeshow">
-      <font-awesome-icon icon="comment-alt"/>
+      <i class="fas fa-comment-alt"></i>
     </div>
   </div>
 </template>

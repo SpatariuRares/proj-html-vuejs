@@ -8,7 +8,7 @@
       <ul class="d-flex px-0 py-3 list-unstyled">
         <li class="px-2" v-for="(social,index) in socials" :key="index">
           <a :href="social.link">
-            <font-awesome-icon :icon="['fab', social.icon]" />
+            <i class="fab" :class="social.icon"></i>
           </a>
         </li>  
       </ul> 

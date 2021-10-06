@@ -89,6 +89,7 @@ export default {
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap.scss";
 @import "@/style/general.scss";
+
 .marketing{
   margin: 150px 0;
 }
